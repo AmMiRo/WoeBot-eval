@@ -15,7 +15,7 @@ export function makeFormErrors(formValues: FormValues) {
   if (formValues.username.length <= 4) {
     errors.push(FormErrorTypes.username);
   }
-  // password must be at least 8 characters with at least 1 upper case and 1 lower case letter, a number, and a special character
+  // must be at least 8 characters with upper case, lower case letter, a number, and a special character
   if (
     !formValues.password.match(
       /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/

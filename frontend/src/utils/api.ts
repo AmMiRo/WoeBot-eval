@@ -1,7 +1,7 @@
 import axios from "axios";
 import { RegistrationPayload, RegistrationResult } from "./types";
 
-const url = "";
+const url = "http://localhost:5000/api/users/";
 
 export function submitUserRegistration(body: RegistrationPayload) {
   const result: RegistrationResult = {

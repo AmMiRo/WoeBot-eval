@@ -31,7 +31,9 @@ function RegistrationFormView(props: Props) {
   return (
     <RegistrationForm>
       {submissionErrorMessage && (
-        <ErrorMessage>{submissionErrorMessage}</ErrorMessage>
+        <ErrorMessage data-test-id="registration-form-error-message">
+          {submissionErrorMessage}
+        </ErrorMessage>
       )}
       <StyledLabel htmlFor="username">
         Username:
@@ -107,7 +109,7 @@ function RegistrationFormView(props: Props) {
   );
 }
 
-const RegistrationForm = styled.form`
+export const RegistrationForm = styled.form`
   align-items: flex-start;
   background-color: White;
   border: black 1px solid;
