@@ -40,7 +40,7 @@ function RegistrationFormContainer() {
     });
   }
 
-  function handleSubmit(e: React.SyntheticEvent) {
+  async function handleSubmit(e: React.SyntheticEvent) {
     e.preventDefault();
     const formattedFormValues = formatValues(formValues);
     const formErrorsList = makeFormErrors(formattedFormValues);
@@ -51,7 +51,8 @@ function RegistrationFormContainer() {
     if (!formErrorsList.length) {
       const payload: RegistrationPayload =
         makeRegistrationPayload(formattedFormValues);
-      setRegistrationResult(submitUserRegistration(payload));
+      const apiResult = await submitUserRegistration(payload);
+      setRegistrationResult(apiResult);
     }
   }
 

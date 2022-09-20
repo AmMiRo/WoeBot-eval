@@ -18,10 +18,22 @@ function SuccessMessage(props: Props) {
   );
 }
 
-const MessageWrapper = styled.div``;
+const MessageWrapper = styled.div`
+  align-items: center;
+  color: White;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 150px;
+`;
 
-const Congrats = styled.h2``;
+const Congrats = styled.h2`
+  font-size: 32px;
+`;
 
-const UserInfo = styled.p``;
+const UserInfo = styled.p`
+  font-size: 24px;
+  margin-top: 50px;
+`;
 
 export default SuccessMessage;
