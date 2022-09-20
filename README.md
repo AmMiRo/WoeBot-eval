@@ -56,7 +56,7 @@ Tests for each app will run with `make test`.
 
 Test files for the frontend are located in the same directory as the component or utils they test.
 
-Tests for the frontend are run in watch mode. If tests do not run (due to no file changes since last test run), press `a` in terminal running the tests.
+Tests for the frontend are run in watch mode. If tests do not run (due to no file changes since last test run), press `a` in the terminal running the tests.
 
 ### Backend
 
