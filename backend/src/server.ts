@@ -20,5 +20,4 @@ server.get("/", (req: Request, res: Response) => {
   res.status(200).json({ message: "Server is up!!!" });
 });
 
-// export default server;
-module.exports = server;
+export default server;

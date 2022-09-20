@@ -1,5 +1,4 @@
-// import server from './server';
-const server = require("./server");
+import server from "./server";
 
 const port = process.env.PORT || 5000;
 
