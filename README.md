@@ -6,7 +6,7 @@
 
 This repo is my submission to the technical evaluation for WoeBot Health.
 
-In this repo are 2 apps, a backend and frontend.
+In this repo are 2 apps, a backend and frontend for the registration form.
 
 ## Setup
 
@@ -44,6 +44,10 @@ Once the registration form has been successfully submitted, a success message wi
 
 I ran out of time to add a persistent login. If the page is refreshed, the form will be reset.
 
+## Stopping the apps
+
+Each app can be stopped by running `ctrl` + `c` in the terminal running that app.
+
 ## Testing
 
 Tests for each app will run with `make test`.
@@ -52,7 +56,7 @@ Tests for each app will run with `make test`.
 
 Test files for the frontend are located in the same directory as the component or utils they test.
 
-Tests for the frontend are run in watch mode. If tests do not run due to no file changes since last test run, press `a` in terminal running the tests.
+Tests for the frontend are run in watch mode. If tests do not run (due to no file changes since last test run), press `a` in terminal running the tests.
 
 ### Backend
 
